@@ -1,0 +1,120 @@
+/*
+    Global styles for the application.
+    This file includes styles for the body, root container, and various components.
+    TO_DO: Consider using CSS-in-JS or a CSS preprocessor for better maintainability and scalability.
+    TO_DO: Add responsive design considerations for better mobile support.
+    TO_DO: Use theme variables for colors and fonts to maintain consistency across the application.
+    TO_DO: Use tailwind classes where possible to reduce custom CSS.
+    TO_DO: Use Material-UI's styling solution for better integration with Material-UI components.
+*/
+html {
+  height: 100%;
+  min-height: 100vh;
+  background-color: #f7fbff;
+  overflow-x: hidden;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-body-component {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+}
+
+.breed-information-typo {
+  color: gray;
+
+  span {
+    color: #000000bf;
+    font-weight: 600;
+  }
+}
+
+.cat-image-shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+.load-more-button {
+  background-color: #000000bf !important;
+  margin-bottom: 30px !important;
+}
+
+.modal-more-breed-button {
+  background-color: #000000bf !important;
+}
+
+.min-width-modal {
+  width: 600px;
+
+  @media (max-width: 640px) {
+    width: 300px;
+  }
+}
+
+.removeIconContainer {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: rgba(256, 256, 256, 0.30);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.cat-list-item-landing-view {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.cat-list-item-container {
+  transition: all 0.3s !important;
+  position: relative;
+}
+
+.cat-list-item-container:hover {
+  transform: scale(1.1)
+}
+
+.mobile-full-width {
+  @media (max-width: 640px) {
+    width: 100%;
+    max-width: unset !important;
+  }
+}
+
+.breed-name-cat-list-item {
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+  text-align: center;
+  background: rgb(26 26 26 / 61%);
+  color: #ffffffbf;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.breed-list-item-description {
+  text-align: left !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.breed-list-item-action-text {
+  text-align: left;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
+}
